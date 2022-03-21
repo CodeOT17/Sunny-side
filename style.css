@@ -1,0 +1,658 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: auto;
+    font-family: sans-serif;
+    height: auto;
+    /* max-width: 1000px; */
+    width: 100%;
+
+}
+main{
+    margin: 0;
+    display: block;
+    width: 100%;
+    
+}
+header{
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    position: relative;
+}
+.nav label{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -1.6rem;
+}
+.nav input{
+    display: none;
+}
+.nav ul{
+    background: #fff; 
+    margin: auto;
+    width: 80%;
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s linear;
+}
+.nav ul li{
+    list-style: none;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;  
+      
+}
+nav ul a{
+    display: flex;
+    padding: 0.5rem;
+    height: 3vh;
+    width: 30vw;
+    margin: auto;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 500ms ease;
+}
+.nav a:hover{
+  background: yellow;
+  height: 8vh;
+  align-items: center;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#landing-bg{
+    height: 100vh; 
+     
+    background: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;  
+}
+#landing-texts{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: rockwell;
+    font-size: 1.3rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    align-content: center;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+#landing-texts span{
+    display: block;   
+}
+#arrow img{
+    height: 200px;
+    margin-top: 40px;
+}
+#checkbox:checked ~ ul {
+    /* display: block; */
+    opacity: 1;
+}
+#s-landing-img{
+    background: url(images/desktop/image-transform.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+#s-landing-texts{
+    padding: 1rem 3rem;
+    display: flex;
+    text-align: center; 
+    height: 200%; 
+       
+}
+#s-landing-texts h2{
+    padding: 1.5rem ;
+    font-weight: 800;
+     font-size: 3rem;
+     font-family: rockwel;
+     color: rgb(5, 36, 5);
+}
+#s-landing-texts h2 p{
+    padding: 1rem 2rem;
+    
+}
+#s-landing-texts .s-more {
+    text-decoration: none;
+    color: #333;
+    font-weight: 900;  
+}
+#s-landing-inner-texts p{
+    margin-bottom: 28px;
+    font-weight: 700;
+    color: #888;
+    line-height: 25px;
+}
+#t-landing-img{
+    background: url(images/desktop/image-stand-out.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    
+}
+#t-landing-texts{
+    padding: 1rem 3rem;
+    display: flex;
+    text-align: center; 
+    height: 200%;
+   
+     
+}
+#t-landing-texts h2{
+    padding: 1rem ;
+    font-weight: 800;
+     font-size: 3rem;
+     font-family: rockwel;
+     color: rgb(5, 36, 5);
+}
+#t-landing-texts p{
+    line-height: 25px;  
+}
+#t-landing-texts .t-more {
+    text-decoration: none;
+    color: #333;
+    font-weight: 900;  
+}
+#t-landing-inner-texts p{
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #888;
+}
+#f-landing{
+    background: url(images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    
+}
+#f-landing-texts{
+    position: relative;
+    top: 49vh;
+    padding: 3rem 2rem;
+    display: flex;
+    text-align: center; 
+}
+#f-landing-texts h2{
+    padding: 2.5rem;
+    font-weight: 800;
+     font-size: 3rem;
+     font-family: rockwel;
+     color: rgb(5, 36, 5);
+}
+#f-landing-texts p{
+    font-weight: 700;
+    color: #333;
+    line-height: 25px;
+    font-size: 1.1rem;
+}
+
+#ff-landing{
+    background: url(images/desktop/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* margin-top: -2rem; */
+}
+#ff-landing-texts{
+    position: relative;
+    top: 48vh;
+    padding: 0.5rem 2rem;
+    display: flex;
+    text-align: center; 
+}
+#ff-landing-texts h2{
+    padding: 2.5rem;
+    font-weight: 800;
+     font-size: 2.5rem;
+     font-family: rockwel;
+     color: rgb(5, 36, 5);
+}
+#ff-landing-texts p{
+    font-weight: 700;
+    color: #333;
+    line-height: 25px;
+    font-size: 1.1;
+}
+#clients-info{
+    /* height: 200vh; */
+    margin: auto;
+}
+#the-clients{
+    display: block;
+    font-size: 1rem;
+    
+}
+#clients-info img{
+    display: flex;
+    margin: auto;
+    border-radius: 70px; 
+     
+}
+#clients-info h3{
+    padding: 4rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    font-family: rockwel;
+    font-weight: 800;   
+}
+
+#emily{
+    height: 50vh;
+    position: relative;
+    top: -2rem;
+    padding: 3rem;
+}
+
+#emily p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    
+}
+#emily h3{
+
+    margin-top: -50px;
+    letter-spacing: 0;
+}
+#emily h5{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    text-align: center;
+    color: #888;
+}
+#thomas{
+    height: 50vh;
+    position: relative;
+    top: -2rem;
+    padding: 3rem;
+    margin-top: -3rem;
+
+}
+#thomas p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    
+}
+#thomas h3{
+    margin-top: -50px;
+    letter-spacing: 0;
+}
+#thomas h5{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    text-align: center;
+    color: #888;
+}
+
+#jennie{
+    height: 50vh;
+    position: relative;
+    top: -1rem;
+    padding: 3rem;
+    margin-top: -3rem;
+}
+#jennie p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    
+}
+#jennie h3{
+    margin-top: -50px;
+    letter-spacing: 0;
+}
+#jennie h5{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    text-align: center;
+    color: #888;
+}
+#footer{
+    /* height: 200vh; */
+    position: relative;
+    top: 19rem;
+
+}
+#footer-images{
+    display: grid;
+    grid-template-columns:repeat(2, 50%);
+}
+#footer-images img{
+    width: 100%;   
+}
+
+#footer-div-bg{
+    background-color: rgb(89, 250, 215);
+    margin-top: -1.5rem;
+    height: 200%;
+}
+#texts{
+    padding: 6.5rem;
+    font-size: 2rem;
+    font-family: rockwell;
+    display: flex;
+    justify-content: center;
+    color: rgb(7, 104, 67);
+}
+#nav{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1rem;
+   text-align: center;
+   font-size: 1rem;
+   margin: auto;
+   font-weight: 700;
+}
+#nav ul a{
+    position: relative;
+    top: -50px;
+    text-decoration: none;
+    color: rgb(7, 104, 67) ;
+}
+#links{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 4rem;
+   text-align: center;
+   font-size: 1rem;
+   margin: auto;
+   margin-top: -40px;
+}
+
+/* responsivesness */
+
+@media (min-width: 768px) {
+   
+   
+    #header{
+        color: #fff;
+        font-size: 1rem;      
+    }
+    #head h1{
+        font-size: 1.4rem;
+    }
+    .nav label{
+        display: none;
+    }
+    nav input{
+      display: none;  
+    }
+    .nav ul{
+        color: #333;
+        opacity: 1;
+        background: 0;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.8rem;
+        font-weight: 600;
+        
+    }
+    .nav ul li{
+        margin: 0;
+        display: flex;
+        position: relative;
+        left: 6rem;
+        top: -3.5rem;
+        width: 10%;
+       
+    }
+    .nav ul li a{
+       text-align: center;
+       height: 3vh;
+       color: #fff;
+       
+       
+    }
+    .nav ul li a:hover{
+        background: turquoise;
+        padding: 0.5rem;
+        height: 5vh;
+        width: 9vw;
+    }
+    #landing-texts{
+        padding: 5rem;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    #landing-texts span{
+        display: inline-block;
+    }
+    #s-landing-img{
+        width: 50%; 
+        height: 50vh;    
+    }
+    #s-landing{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;   
+    }
+    #s-landing-texts h2{
+        font-size: 2.5rem;
+        padding-left: 0;
+        display: flex;
+        text-align: left;
+        line-height: 35px;
+    }
+    #s-landing-texts{
+        height: 50vh;
+        width: 50%;
+        font-size: 0.9rem;
+        line-height: 0;
+        padding: 3rem;
+        text-align: left;
+
+        box-sizing: border-box;
+        
+    }
+    #s-landing-texts p{
+        line-height: 15px;
+        text-align: left;   
+    }
+    
+
+    #t-landing-img{
+        width: 50%; 
+        height: 50vh;
+          
+    }
+    #t-landing{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+       
+        
+    }
+    #t-landing-texts h2{
+        font-size: 2.5rem;
+        padding-left: 0;
+        display: flex;
+        text-align: left;
+        line-height: 35px;
+    }
+    #t-landing-texts{
+        height: 50vh;
+        width: 50%;
+        font-size: 0.9rem;
+        line-height: 0;
+        padding: 3rem;
+        text-align: left;
+        box-sizing: border-box;  
+    }
+    #t-landing-texts p{
+        line-height: 15px;
+        text-align: left;   
+    }
+    #gp{
+        display: flex;
+        align-items: center;
+        height: 50vh;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #f-landing{
+        height: 100%;
+        width: 50%;
+        
+    }
+    #f-landing-texts{
+        position: relative;
+        top: 18vh;
+        padding: 3rem 2rem;
+        display: flex;
+        text-align: center; 
+    }
+    #f-landing-texts h2{
+        padding: 1rem;
+        font-weight: 800;
+         font-size: 2rem;
+         font-family: rockwel;
+         color: rgb(5, 36, 5);
+    }
+    #f-landing-texts p{
+        font-weight: 700;
+        color: #333;
+        line-height: 15px;
+        font-size: 0.9rem;
+    }
+
+    #ff-landing{
+        height: 100%;
+        width: 50%;
+        /* position: relative;
+        top: 10%; */
+        
+    }
+    #ff-landing-texts{
+        position: relative;
+        top: 18vh;
+        padding: 3rem 2rem;
+        display: flex;
+        text-align: center; 
+    }
+    #ff-landing-texts h2{
+        padding: 1rem;
+        font-weight: 800;
+         font-size: 2rem;
+         font-family: rockwel;
+         color: rgb(5, 36, 5);
+    }
+    #ff-landing-texts p{
+        font-weight: 700;
+        color: #333;
+        line-height: 15px;
+        font-size: 0.9rem;
+    }
+    
+
+    #clients-info{
+        position: relative;
+        height: 80vh;      
+    }
+
+    #the-clients{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 13px;
+        color: #333;
+    }
+    #emily{
+        position: relative;
+        top: 0rem;
+    }
+    #thomas{
+        position: relative;
+        top: 3rem;
+    }
+    #jennie{
+        position: relative;
+        top: 3rem;
+    }
+    #the-clients img{
+        height: 15vh;
+    }
+    #the-clients h3{
+        font-size: 1rem;
+    }
+    #footer-images{
+        height: 230px;
+        width: 100%;
+        display: flex;
+    }
+    #texts{
+        padding: 6.5rem;
+        font-size: 1rem;
+        font-family: rockwell;
+        display: flex;
+        justify-content: center;
+        color: rgb(7, 104, 67);  
+    }
+    footer{
+        position: relative;
+        top: 8rem;
+    }
+    #nav{
+        display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 1rem;
+       text-align: center;
+       font-size: 0.8rem;
+       margin-left: 30%;
+       margin-right: 30%;
+       font-weight: 700;
+    }
+    #links{
+        display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 4rem;
+       text-align: center;
+       font-size: 1rem;
+       margin-left: 30%;
+       margin-right: 30%;
+    }
+    #footer-div-bg ul a:hover{
+        color: #fff;
+    }
+    #links ul a:hover{
+        color: #fff;
+    }
+}
